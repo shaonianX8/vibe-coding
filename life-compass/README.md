@@ -22,7 +22,8 @@
 
 | 文件 | 内容 |
 | --- | --- |
-| [DEPLOYMENT.md](DEPLOYMENT.md) | **从零部署到 iPhone 的完整步骤**（先看这个） |
+| [local-coach/README.md](local-coach/README.md) | **不部署网站的轻量方案**：本地 Claude + 早晚两个定时任务 + 本地文件夹 |
+| [DEPLOYMENT.md](DEPLOYMENT.md) | 从零部署网页应用到 iPhone 的完整步骤 |
 | [PRODUCT_SPEC.md](PRODUCT_SPEC.md) | 功能、验收结果、后续版本 |
 | [LIFE_STRATEGY.md](LIFE_STRATEGY.md) | 长期战略初始资料（不含个人敏感背景） |
 | [AI_RULES.md](AI_RULES.md) | AI 能做什么、不能做什么，预警与建议规则 |
