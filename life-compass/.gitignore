@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+next-env.d.ts
+.env
+.env.*
+!.env.example
+.vercel
+supabase/.branches
+supabase/.temp
+# 私人初始化资料永远不进仓库
+private/

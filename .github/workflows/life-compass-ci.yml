@@ -1,0 +1,28 @@
+name: life-compass CI
+
+on:
+  push:
+    paths: ["life-compass/**", ".github/workflows/life-compass-ci.yml"]
+  pull_request:
+    paths: ["life-compass/**", ".github/workflows/life-compass-ci.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: life-compass
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: life-compass/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
